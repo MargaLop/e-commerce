@@ -2,16 +2,30 @@
     margin:0px;
     padding:0px;
 }
-    
+
 #barra-superior {
     margin:auto;
     width:100%;
     background:#5339ae; 
-    height:50px; 
+    height:28px; 
+    z-index:101; 
+}
+
+h2{
+    color:#ffffff;
+    font:normal normal 18px Arial; 
+    padding: 5px;
+    text-align:center;
+}
+
+#barra-inferior-father {
+    margin:auto;
+    width:100%;
+    background:fffff; 
+    height:70px; 
     border-bottom: 4px solid #adbcdc;
     position:fixed;
-    z-index:101; 
-
+    z-index:101;
 }
 
 ul, ol {
@@ -28,12 +42,12 @@ ul, ol {
 }
 
 .menu li a {
-    color:#ffffff;
+    color:#5339ae;
     font:normal normal 18px Arial; 
     text-transform:uppercase;
     letter-spacing: 3px; 
     text-decoration:none;
-    padding:15px 5px;
+    padding:25px 5px;
     display:block;
     cursor:pointer;
 
@@ -51,7 +65,7 @@ ul, ol {
 }
 
 .menu li ul a {
-    color: #666666;
+    color: #5339ae;
     font:normal normal 12px ARIAL;
     text-transform:uppercase;
     letter-spacing: 2px;
@@ -61,14 +75,19 @@ ul, ol {
     display:block;
 }
 
-
+.logotype{
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    margin-left: 15px;
+}
 
 .search-box{
     width:22%; 
     text-align:center;
-    padding:5px 0;
+    padding:15px 0;
     MARGIN-LEFT: 50PX;
-    color:#333333;
+    color:#5339ae;
     border:0px solid #cccccc;
     background:#ffffff;
     font: normal normal 15px Lato;
