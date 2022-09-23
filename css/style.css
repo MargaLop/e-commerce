@@ -3,6 +3,7 @@
     padding:0px;
 }
 
+
 #barra-superior {
     margin:auto;
     width:100%;
@@ -26,9 +27,8 @@ h2{
     border-bottom: 4px solid #adbcdc;
     position:sticky;
     z-index:101;
-    padding: 1% 5% 1% 5%;
     top:0px;
-    overflow: hidden;
+    padding-top:.2em;
 }
 
 ul, ol {
@@ -102,13 +102,16 @@ ul, ol {
 }
 
 #buscar-top{ 
-    margin-top:12px; 
-    margin-right:170px;
+    margin-top:0.6em; 
+    width: 100vw;
 }
 
 /*banner*/
 
 .pht-banner{
     width: 100vw;
-    
+}
+.contenedor{
+    width: 100vw;
+    overflow: hidden;
 }
