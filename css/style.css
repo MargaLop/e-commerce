@@ -20,12 +20,15 @@ h2{
 
 #barra-inferior-father {
     margin:auto;
-    width:100%;
-    background:fffff; 
+    width:100vw;
+    background-color: #ffffff; 
     height:70px; 
     border-bottom: 4px solid #adbcdc;
-    position:fixed;
+    position:sticky;
     z-index:101;
+    padding: 1% 5% 1% 5%;
+    top:0px;
+    overflow: hidden;
 }
 
 ul, ol {
@@ -45,9 +48,9 @@ ul, ol {
     color:#5339ae;
     font:normal normal 18px Arial; 
     text-transform:uppercase;
-    letter-spacing: 3px; 
+    letter-spacing: 2px; 
     text-decoration:none;
-    padding:25px 5px;
+    padding:14px 10px;
     display:block;
     cursor:pointer;
 
@@ -59,6 +62,7 @@ ul, ol {
 
 .menu li ul {
     background-color: #f4f0f1;
+    text-align:center;
     display:none;
     position:absolute;
     min-width:140px;
@@ -75,26 +79,36 @@ ul, ol {
     display:block;
 }
 
-.logotype{
-    width: 45px;
-    height: 45px;
-    padding-top: 10px;
-    margin-left: 15px;
+.logo{
+    display: block;
+    float: left;
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    padding-left: 4em;
 }
 
 .search-box{
     width:22%; 
     text-align:center;
-    padding:15px 0;
+    padding:10px 0;
     MARGIN-LEFT: 50PX;
     color:#5339ae;
     border:0px solid #cccccc;
     background:#ffffff;
     font: normal normal 15px Lato;
     border-radius: 5px;
+    border: 1px solid  #5339ae;
 }
 
 #buscar-top{ 
     margin-top:12px; 
     margin-right:170px;
+}
+
+/*banner*/
+
+.pht-banner{
+    width: 100vw;
+    
 }
