@@ -3,7 +3,6 @@
     padding:0px;
 }
 
-
 #barra-superior {
     margin:auto;
     width:100%;
@@ -85,7 +84,7 @@ ul, ol {
     width: 100px;
     height: auto;
     padding: 10px;
-    padding-left: 4em;
+    margin-left: 2em;
 }
 
 .search-box{
@@ -111,7 +110,61 @@ ul, ol {
 .pht-banner{
     width: 100vw;
 }
+
 .contenedor{
     width: 100vw;
     overflow: hidden;
+}
+
+/*newsletter*/
+
+.container-newsletter{
+    background-color: #cccccc;
+    padding: 100px 40px;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+}
+
+.container-newsletter p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i{
+    background: #000;
+    color: #cccccc;
+    width: 40px;
+    line-height: 40px;
+}
+
+.tbox, .btn{
+    border: none;
+    outline: none;
+}
+
+.tbox{
+    width: 0px;
+    transition: 0.6s;
+}
+
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+
+.btn{
+    background: #000000;
+    color: #cccccc;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0%;
 }
