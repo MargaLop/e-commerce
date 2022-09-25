@@ -116,13 +116,18 @@ ul, ol {
     overflow: hidden;
 }
 
-/*newsletter*/
+/*newsletter y Container informacion*/
 
-.container-newsletter{
+.container-newsletter, .container-info{
     background-color: #cccccc;
     padding: 100px 40px;
     text-align: center;
     font-family: "montserrat", sans-serif;
+}
+
+.container-newsletter{
+    filter:alpha(opacity=10);
+    -moz-opacity:.10;opacity:0;
 }
 
 .container-newsletter p{
@@ -143,6 +148,14 @@ ul, ol {
     color: #cccccc;
     width: 40px;
     line-height: 40px;
+}
+
+.container-info i{
+    color: #898989;
+    font-size: 30px;
+    line-height: 60px;
+    right: 0;
+    width: 60px;
 }
 
 .tbox, .btn{
@@ -167,4 +180,8 @@ ul, ol {
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 0%;
+}
+
+.container-info i{
+    color: #898989;
 }
