@@ -119,15 +119,13 @@ ul, ol {
 /*newsletter y Container informacion*/
 
 .container-newsletter, .container-info{
-    background-color: #cccccc;
     padding: 100px 40px;
     text-align: center;
     font-family: "montserrat", sans-serif;
 }
 
-.container-newsletter{
-    filter:alpha(opacity=10);
-    -moz-opacity:.10;opacity:0;
+.container-info{
+    background-color: #cccccc;
 }
 
 .container-newsletter p{
@@ -184,4 +182,14 @@ ul, ol {
 
 .container-info i{
     color: #898989;
+}
+
+.container-info p{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+/*Imagen fondo*/
+.container-newsletter{
+    background-image: linear-gradient(rgba(5,7,12,.75), rgba(5,7,12,.75)), url("../img/fondo-imagen-1.jpg");
 }
