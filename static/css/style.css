@@ -160,6 +160,10 @@ ul, ol {
 /*Imagen fondo*/
 .container-newsletter{
     background-image: linear-gradient(rgba(5,7,12,.75), rgba(5,7,12,.75)), url("../img/fondo-imagen-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top; 
 }
 .newsletter{
     color: #000;
@@ -173,4 +177,12 @@ ul, ol {
     line-height: 60px;
     right: 0;
     width: 60px;
+    padding: 70vh 95vw 0 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.shopping-cart:hover{
+    color: #5c4c95;
+    font-size: 32px;
 }
