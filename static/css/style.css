@@ -2,7 +2,6 @@
     margin:0px;
     padding:0px;
 }
-
 #barra-superior {
     margin:auto;
     width:100%;
@@ -10,14 +9,12 @@
     height:28px; 
     z-index:101; 
 }
-
 h2{
     color:#ffffff;
     font:normal normal 18px Arial; 
     padding: 5px;
     text-align:center;
 }
-
 #barra-inferior-father {
     margin:auto;
     width:100vw;
@@ -29,20 +26,16 @@ h2{
     top:0px;
     padding-top:.2em;
 }
-
 ul, ol {
     list-style:none;
 }
-
 .menu > li {
     float:left;
 }
-
 .menu{
     margin:0 auto;
     width:1000px;
 }
-
 .menu li a {
     color:#5339ae;
     font:normal normal 18px Arial; 
@@ -52,13 +45,10 @@ ul, ol {
     padding:14px 10px;
     display:block;
     cursor:pointer;
-
 }
-
 .menu li a:hover {
     color: #a983ef;
 }
-
 .menu li ul {
     background-color: #f4f0f1;
     text-align:center;
@@ -66,18 +56,15 @@ ul, ol {
     position:absolute;
     min-width:140px;
 }
-
 .menu li ul a {
     color: #5339ae;
     font:normal normal 12px ARIAL;
     text-transform:uppercase;
     letter-spacing: 2px;
 }
-
 .menu li:hover > ul {
     display:block;
 }
-
 .logo{
     display: block;
     float: left;
@@ -87,67 +74,54 @@ ul, ol {
     margin-left: 2em;
 }
 
-.search-box{
-    width:22%; 
-    text-align:center;
-    padding:10px 0;
-    MARGIN-LEFT: 50PX;
-    color:#5339ae;
-    border:0px solid #cccccc;
-    background:#ffffff;
-    font: normal normal 15px Lato;
-    border-radius: 5px;
-    border: 1px solid  #5339ae;
+/*search box*/
+.active-purple input.form-control[type=text] {
+    border-bottom: 1px solid #5339ae;
+    box-shadow: 0 1px 0 0 #5339ae;
 }
-
-#buscar-top{ 
-    margin-top:0.6em; 
-    width: 100vw;
+.active-purple-2 input.form-control[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #5339ae;
+    box-shadow: 0 1px 0 0 #5339ae;
+}
+.active-purple .fa, .active-purple-2, .fa .fas .fa-search{
+  color: #5339ae;
 }
 
 /*banner*/
-
 .pht-banner{
     width: 100vw;
 }
-
 .contenedor{
     width: 100vw;
     overflow: hidden;
 }
 
 /*newsletter y Container informacion*/
-
 .container-newsletter, .container-info{
     padding: 100px 40px;
     text-align: center;
     font-family: "montserrat", sans-serif;
 }
-
 .container-info{
     background-color: #cccccc;
 }
-
 .container-newsletter p{
     max-width: 600px;
     margin: 40px auto;
     font-size: 15px;
     font-weight: 300;
 }
-
 .email-box {
     height: 40px;
     display: flex;
     justify-content: center;
 }
-
 .email-box i{
     background: #000;
     color: #cccccc;
     width: 40px;
     line-height: 40px;
 }
-
 .container-info i{
     color: #898989;
     font-size: 30px;
@@ -155,22 +129,18 @@ ul, ol {
     right: 0;
     width: 60px;
 }
-
 .tbox, .btn{
     border: none;
     outline: none;
 }
-
 .tbox{
     width: 0px;
     transition: 0.6s;
 }
-
 .email-box:hover > .tbox,.tbox:focus{
     width: 260px;
     padding: 0 10px;
 }
-
 .btn{
     background: #000000;
     color: #cccccc;
@@ -179,11 +149,9 @@ ul, ol {
     cursor: pointer;
     border-radius: 0%;
 }
-
 .container-info i{
     color: #898989;
 }
-
 .container-info p{
     margin-left: 5vh;
     margin-right: 5vh;
@@ -192,4 +160,17 @@ ul, ol {
 /*Imagen fondo*/
 .container-newsletter{
     background-image: linear-gradient(rgba(5,7,12,.75), rgba(5,7,12,.75)), url("../img/fondo-imagen-1.jpg");
+}
+.newsletter{
+    color: #000;
+}
+
+/*shopping*/
+.shopping-cart{
+    color: #5339ae;
+    position: fixed;
+    font-size: 30px;
+    line-height: 60px;
+    right: 0;
+    width: 60px;
 }

@@ -57,10 +57,17 @@
                         </ul>
                     </li>
                 </ul>
-                <div id='buscar-top'><form action='/search' id='searchthis' method='get' style='display: inline;'>
-                    <input class='search-box' name='q' placeholder='BUSCAR' size='30' type='text'/>
-                </form></div>
+                <div id='buscar-top'>
+                    <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                          aria-label="Buscar">
+                    </form>                      
+                </div>
             </div>
+        </div>
+        <div class="container-shopping-cart">
+            <i class="fa-solid fa-cart-arrow-down shopping-cart"></i>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -123,4 +130,3 @@
         </div>
     </body>
 </html>
-
