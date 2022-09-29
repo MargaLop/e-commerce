@@ -177,7 +177,7 @@ ul, ol {
     line-height: 60px;
     right: 0;
     width: 60px;
-    padding: 70vh 95vw 0 0;
+    margin: 70vh 90vw 0 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -200,6 +200,8 @@ ul, ol {
     flex-wrap: wrap;
     gap: 50px;
     margin-bottom: 20px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 .container-betseller>div{
     box-shadow: 0 0 5px 0 #6449c4;
@@ -207,7 +209,7 @@ ul, ol {
     border-radius: 20px;
 }
 .container-betseller>div:hover{
-    box-shadow: 0 0 5px 0 #5235bb;
+    box-shadow: 0 0 5px 0 #3705ed;
 }
 .informacion{
     height: 150px;
@@ -215,7 +217,6 @@ ul, ol {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    gap: 15px;
 }
 .informacion>p:first-child{
     font-family: 'montserrat', sans-serif;
@@ -232,6 +233,7 @@ ul, ol {
 }
 .informacion button{
     background-color: #5235bb;
+    color: #ffffff;
     width: 100px;
     height: 35;
     border-radius: 10px;
@@ -239,7 +241,13 @@ ul, ol {
     font-size: 17px;
     font-weight: 300;
     cursor: pointer;
+    padding-bottom: .2em;
 }
 .informacion button:hover{
     background-color: #c0b2f1;
+    color: #333232;
+}
+.informacion>p,.informacion>button{
+    margin: auto;
+    text-align: center;
 }
