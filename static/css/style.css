@@ -166,7 +166,7 @@ ul, ol {
     background-position: top; 
 }
 .newsletter{
-    color: #000;
+    color: rgb(255, 255, 255);
 }
 
 /*shopping*/
@@ -185,4 +185,61 @@ ul, ol {
 .shopping-cart:hover{
     color: #5c4c95;
     font-size: 32px;
+}
+
+/*top productos*/
+.top-bestseller{
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.container-betseller{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.container-betseller>div{
+    box-shadow: 0 0 5px 0 #6449c4;
+    background-color: #d4c9fa;
+    border-radius: 20px;
+}
+.container-betseller>div:hover{
+    box-shadow: 0 0 5px 0 #5235bb;
+}
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.informacion>p:first-child{
+    font-family: 'montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+.informacion .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+.informacion .precio span{
+    font-size: 17px;
+    font-weight: 300;
+}
+.informacion button{
+    background-color: #5235bb;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.informacion button:hover{
+    background-color: #c0b2f1;
 }
