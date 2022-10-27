@@ -33,7 +33,6 @@ function addItemCarrito(newItem){
           inputValue.value ++;
           carritoTotal()
           return null;
-
         }
     }
     carrito.push(newItem)
@@ -62,6 +61,7 @@ function renderCarrito(){
         tbody.append(tr)
         
         tr.querySelector(".delete").addEventListener('click', removeItemCarrito)
+        tr.querySelector(".input__elemento").addEventListener('change', sumaCantidad)
 
     })
     carritoTotal()
@@ -80,9 +80,8 @@ function carritoTotal(){
 function removeItemCarrito(e){
     const buttonDelete = e.target
     const tr = buttonDelete.closest(".itemCarrito")
-    const title = tr.querySelector('.title')
+    const title = tr.querySelector('.title').textContent;
     for(let i=0; i<carrito.length ; i++){
-
         if(carrito[i].title.trim() === title.trim()){
           carrito.splice(i, 1)
         }
@@ -90,3 +89,16 @@ function removeItemCarrito(e){
     tr.remove()
     carritoTotal()
 }
+
+function sumaCantidad(e){
+    const sumaInput  = e.target
+    const tr = sumaInput.closest(".itemCarrito")
+    const title = tr.querySelector('.title').textContent;
+    carrito.forEach(item => {
+      if(item.title.trim() === title){
+        sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
+        item.cantidad = sumaInput.value;
+        carritoTotal()
+      }
+    })
+  }
