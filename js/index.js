@@ -75,6 +75,7 @@ function carritoTotal(){
         total = total + + precio*item.cantidad
 })
     itemCartTotal.innerHTML = `Total ${total}$ `
+    addLocalStorage()
 }
 
 function removeItemCarrito(e){
@@ -101,4 +102,16 @@ function sumaCantidad(e){
         carritoTotal()
       }
     })
-  }
+}
+
+function addLocalStorage(){
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+}
+  
+window.onload = function(){
+    const storage = JSON.parse(localStorage.getItem('carrito'));
+    if(storage){
+      carrito = storage;
+      renderCarrito()
+    }
+}
