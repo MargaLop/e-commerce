@@ -76,3 +76,17 @@ function carritoTotal(){
 })
     itemCartTotal.innerHTML = `Total ${total}$ `
 }
+
+function removeItemCarrito(e){
+    const buttonDelete = e.target
+    const tr = buttonDelete.closest(".itemCarrito")
+    const title = tr.querySelector('.title')
+    for(let i=0; i<carrito.length ; i++){
+
+        if(carrito[i].title.trim() === title.trim()){
+          carrito.splice(i, 1)
+        }
+    }
+    tr.remove()
+    carritoTotal()
+}
