@@ -278,3 +278,7 @@ ul, ol {
     margin-right: 30px;
     margin-bottom: 20px;
   }
+
+.itemCartTotal{
+    color: #5235bb;
+}
