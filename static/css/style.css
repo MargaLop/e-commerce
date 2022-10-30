@@ -105,6 +105,12 @@ ul, ol {
 .container-info{
     background-color: #cccccc;
 }
+.social-icon:hover{
+    color: #a983ef;
+}
+.social-media-icon:hover{
+    color: transparent;
+}
 .container-newsletter p{
     max-width: 600px;
     margin: 40px auto;
@@ -202,6 +208,7 @@ ul, ol {
     margin-bottom: 20px;
     padding-top: 3em;
     padding-bottom: 3em;
+
 }
 .container-betseller>div{
     box-shadow: 0 0 5px 0 #6449c4;
@@ -284,9 +291,7 @@ ul, ol {
 .button-carrito{
     background: transparent;
     border: none;
- 
 }
-
 .carrito{
     display:none
 }
