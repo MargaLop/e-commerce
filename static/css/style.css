@@ -298,3 +298,17 @@ ul, ol {
 .carrito:hover{
     display: block;
 }
+
+.active{
+    background: #000;
+}
+.secciciones{
+    width: 100%;
+    background: #ffffff;
+}
+.secciciones article{
+    padding: 30px;
+}
+.secciciones article p{
+    text-align: justify;
+}
