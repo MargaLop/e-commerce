@@ -300,15 +300,6 @@ ul, ol {
 }
 
 .active{
-    background: #000;
+    background: #8a55ed;
 }
-.secciciones{
-    width: 100%;
-    background: #ffffff;
-}
-.secciciones article{
-    padding: 30px;
-}
-.secciciones article p{
-    text-align: justify;
-}
+
