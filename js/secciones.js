@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    $('ul.tabs li a:first').addClass('active');
     $('.secciones article').hide();
     $('.secciones article:first').show();
 
