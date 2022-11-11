@@ -65,13 +65,12 @@ ul, ol {
 .menu li:hover > ul {
     display:block;
 }
-.logo{
+.logo-inicio{
     display: block;
     float: left;
     width: 100px;
     height: auto;
-    padding: 10px;
-    margin-left: 2em;
+    padding: 0 2px 0 10px;
 }
 
 /*search box*/
