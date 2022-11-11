@@ -11,4 +11,9 @@ $(document).ready(function(){
         $(activeTab).show()
         return false;
     });
+
+    $('img.logo-inicio').click(function(){
+        $('.secciones article').hide();
+        $('.secciones article:first').show();
+    });
 });
