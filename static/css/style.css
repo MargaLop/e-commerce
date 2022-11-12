@@ -2,18 +2,17 @@
     margin:0px;
     padding:0px;
 }
-#barra-superior {
+.barra-superior {
     margin:auto;
     width:100%;
     background:#5339ae; 
     height:28px; 
     z-index:101; 
 }
-h2{
-    color:#ffffff;
-    font:normal normal 18px Arial; 
+.text-oferta{
+    color: #ffffff;
+    font: normal normal 18px Ariel;
     padding: 5px;
-    text-align:center;
 }
 #barra-inferior-father {
     margin:auto;
@@ -71,6 +70,43 @@ ul, ol {
     width: 100px;
     height: auto;
     padding: 0 2px 0 10px;
+}
+
+/* scroll tetxt */ 
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 22s linear infinite;
+    -webkit-animation: my-animation 22s linear infinite;
+    animation: my-animation 22s linear infinite;
+}
+  
+  /* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+  
+  /* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+  
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
 }
 
 /*search box*/
