@@ -1,5 +1,4 @@
 const clickButtonCarrito = document.getElementById('shoppingCart')
-console.log(clickButtonCarrito)
 
 function openCarrito() {
     var x = document.getElementById("carrito");
@@ -13,3 +12,8 @@ function openCarrito() {
 clickButtonCarrito.addEventListener('click', openCarrito)
 
 
+
+  $('button.button-carrito').click(function(){
+      $('.secciones article').hide();
+  });
+});

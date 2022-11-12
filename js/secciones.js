@@ -12,6 +12,7 @@ $(document).ready(function(){
         return false;
     });
 
+    // INICIO
     $('img.logo-inicio').click(function(){
         $('.secciones article').hide();
         $('.secciones article:first').show();
