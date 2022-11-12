@@ -74,7 +74,7 @@ function carritoTotal(){
         const precio = Number(item.precio.replace("$",''))
         total = total + + precio*item.cantidad
 })
-    itemCartTotal.innerHTML = `Total ${total}$ `
+    itemCartTotal.innerHTML = `Total ${parseFloat(total).toFixed(2)}$ `
     addLocalStorage()
 }
 

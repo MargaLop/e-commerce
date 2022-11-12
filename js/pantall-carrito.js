@@ -11,9 +11,6 @@ function openCarrito() {
 
 clickButtonCarrito.addEventListener('click', openCarrito)
 
-
-
-  $('button.button-carrito').click(function(){
+$('button.button-carrito').click(function(){
       $('.secciones article').hide();
-  });
 });
