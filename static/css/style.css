@@ -337,3 +337,11 @@ ul, ol {
 .active{
     background: #8a55ed;
 }
+
+/* secciones */
+.titulo-seccion-gafas{
+    text-align:center;
+    width: 100%;
+    text-transform: uppercase;
+    color: #8a55ed;
+}
