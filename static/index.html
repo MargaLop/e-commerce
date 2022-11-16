@@ -63,8 +63,8 @@
                 <div id='buscar-top'>
                     <form class="form-inline d-flex justify-content-center md-form form-sm active-purple active-purple-2 mt-2">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-                          aria-label="Buscar">
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" id="search-item"
+                          aria-label="Buscar" onkeyup="search()">
                     </form>                      
                 </div>
             </div>
@@ -101,7 +101,7 @@
                       <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="container-betseller" id="contenedor" >
+                <div class="container-betseller" id="product-list" >
                     <div class="card product1">
                         <img src="./img/catalogo/1.jpg" alt="Producto 1" class="top-bestseller">
                         <div class="informacion">

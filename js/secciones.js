@@ -15,6 +15,7 @@ $(document).ready(function(){
     // INICIO
     $('img.logo-inicio').click(function(){
         $('.secciones article').hide();
+        $('.secciones article').hide();
         $('.secciones article:first').show();
     });
 });
